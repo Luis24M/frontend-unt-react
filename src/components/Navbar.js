@@ -1,12 +1,13 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          Base de Datos
-        </a>
+        <Link className="navbar-brand" to="/Intro">
+          RELUSUS
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,19 +22,44 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link "  to='/HomePage'>
                 Customers
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Pricing
-              </a>
+              <Link className="nav-link " to="/Employees">
+                Employees 
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/Offices">
+                Offices
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link "  to="/OrderDetails">
+                Order Details
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link "  to="/Orders">
+                Orders
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link "  to="/Payments">
+                Payments 
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link "  to="/ProductLines">
+                Product Lines 
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link "  to="/Products">
+                Products 
+              </Link>
             </li>
           </ul>
         </div>

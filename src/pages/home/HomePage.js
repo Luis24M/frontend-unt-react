@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import { Form } from "../../components/Form";
-import { Navbar } from "../../components/Navbar";
-import Table from "../../components/Table";
+import TableCustomers from "../../components/TableCustomers";
 
 function HomePage() {
   const [customers, setCustomers] = useState([]);
@@ -61,8 +59,8 @@ function HomePage() {
   };
 
   return (
+    
     <div>
-      <Navbar />
       <div className="container">
         <div className="row mt-4">
           <div className="col">
@@ -109,7 +107,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <Table customers={showCustomers} />
+      <TableCustomers customers={showCustomers} />
     </div>
   );
 }

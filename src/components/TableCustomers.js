@@ -1,6 +1,7 @@
 import React from "react";
 
-function Table({customers}) {
+
+function TableCustomers({customers}) {
   return (
     <div className="container">
       <table className="table">
@@ -29,4 +30,4 @@ function Table({customers}) {
   );
 }
 
-export default Table;
+export default TableCustomers;
