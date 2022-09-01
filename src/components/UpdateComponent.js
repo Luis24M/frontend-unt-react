@@ -81,6 +81,71 @@ const UpdateComponent = () => {
           </div>
         </div>
         <div className="row mb-3">
+          <label className="col-sm-3 col-form-label">"city"</label>
+          <div className="col-sm-9">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Jhon"
+              value={currentData.city}
+              name="city"
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="row mb-3">
+          <label className="col-sm-3 col-form-label">"contactFirstName"</label>
+          <div className="col-sm-9">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Jhon"
+              value={currentData.contactFirstName}
+              name="contactFirstName"
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="row mb-3">
+          <label className="col-sm-3 col-form-label">"contactLastName"</label>
+          <div className="col-sm-9">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Jhon"
+              value={currentData.contactLastName}
+              name="contactLastName"
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="row mb-3">
+          <label className="col-sm-3 col-form-label">"country"</label>
+          <div className="col-sm-9">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Jhon"
+              value={currentData.country}
+              name="country"
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="row mb-3">
+          <label className="col-sm-3 col-form-label">"creditLimit"</label>
+          <div className="col-sm-9">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Jhon"
+              value={currentData.creditLimit}
+              name="creditLimit"
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="row mb-3">
           <label className="col-sm-3 col-form-label">"customerName"</label>
           <div className="col-sm-9">
             <input
@@ -94,110 +159,50 @@ const UpdateComponent = () => {
           </div>
         </div>
         <div className="row mb-3">
-          <label className="col-sm-3 col-form-label">""</label>
+          <label className="col-sm-3 col-form-label">"customerNumber"</label>
           <div className="col-sm-9">
             <input
               type="text"
               className="form-control"
               placeholder="Jhon"
-              value=""
-              name=""
+              value={currentData.customerNumber}
+              name="customerNumber"
               onChange={handleChange}
             />
           </div>
         </div>
         <div className="row mb-3">
-          <label className="col-sm-3 col-form-label">""</label>
+          <label className="col-sm-3 col-form-label">"phone"</label>
           <div className="col-sm-9">
             <input
               type="text"
               className="form-control"
               placeholder="Jhon"
-              value=""
-              name=""
+              value={currentData.phone}
+              name="phone"
               onChange={handleChange}
             />
           </div>
         </div>
         <div className="row mb-3">
-          <label className="col-sm-3 col-form-label">""</label>
+          <label className="col-sm-3 col-form-label">"postalCode"</label>
           <div className="col-sm-9">
             <input
               type="text"
               className="form-control"
               placeholder="Jhon"
-              value=""
-              name=""
+              value={currentData.postalCode}
+              name="postalCode"
               onChange={handleChange}
             />
           </div>
         </div>
-        <div className="row mb-3">
-          <label className="col-sm-3 col-form-label">""</label>
-          <div className="col-sm-9">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Jhon"
-              value=""
-              name=""
-              onChange={handleChange}
-            />
-          </div>
+        <div className="row my-4">
+        <div className="col-sm-6"></div>
+        <div className="d-grid col-sm-6">
+          <button className="btn btn-success" type="submit">enviar</button>
         </div>
-        <div className="row mb-3">
-          <label className="col-sm-3 col-form-label">""</label>
-          <div className="col-sm-9">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Jhon"
-              value=""
-              name=""
-              onChange={handleChange}
-            />
-          </div>
         </div>
-        <div className="row mb-3">
-          <label className="col-sm-3 col-form-label">""</label>
-          <div className="col-sm-9">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Jhon"
-              value=""
-              name=""
-              onChange={handleChange}
-            />
-          </div>
-        </div>
-        <div className="row mb-3">
-          <label className="col-sm-3 col-form-label">""</label>
-          <div className="col-sm-9">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Jhon"
-              value=""
-              name=""
-              onChange={handleChange}
-            />
-          </div>
-        </div>
-        <div className="row mb-3">
-          <label className="col-sm-3 col-form-label">""</label>
-          <div className="col-sm-9">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Jhon"
-              value=""
-              name=""
-              onChange={handleChange}
-            />
-          </div>
-        </div>
-        <button type="submit">enviar</button>
       </form>
     </div>
   );
