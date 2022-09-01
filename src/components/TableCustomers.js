@@ -1,7 +1,24 @@
-import React from "react";
+import React, {useContext} from "react";
+import { useNavigate } from "react-router-dom";
+import { DataContext } from "../context/dataContext";
 
 
 function TableCustomers({customers}) {
+  const [contextData, setContextData] = useContext(DataContext)
+
+  const navigate = useNavigate()
+
+  const renderView = (customer) => {
+    localStorage.setItem('data', JSON.stringify(customer))
+    setContextData(customer)
+    navigate("/details")
+  }
+
+  const update = (customer) => {
+    localStorage.setItem('data', JSON.stringify(customer))
+    navigate("/update")
+  }
+
   return (
     <div className="container">
       <table className="table">
@@ -11,6 +28,7 @@ function TableCustomers({customers}) {
             <th scope="col">Name</th>
             <th scope="col">Phone</th>
             <th scope="col">City</th>
+            <th scope="col">Options</th>
           </tr>
         </thead>
         <tbody>
@@ -21,6 +39,10 @@ function TableCustomers({customers}) {
                 <td>{customer.customerName}</td>
                 <td>{customer.phone}</td>
                 <td>{customer.city}</td>
+                <td>
+                  <button className="btn btn-success mx-2" type="button" onClick={() => renderView(customer)}>View</button>
+                  <button className="btn btn-warning" type="button" onClick={() => update(customer)}>Update</button>
+                </td>
               </tr>
             );
           })}

@@ -1,11 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import TableCustomers from "../../components/TableCustomers";
+import { DataContext } from "../../context/dataContext";
 
 function HomePage() {
   const [customers, setCustomers] = useState([]);
   const [showCustomers, setShowCustomers] = useState([]);
   const [field, setField] = useState("");
   const [value, setValue] = useState("");
+
+  const [contextData, setContextData] = useContext(DataContext)
 
   const customerParameters = [
     "customerNumber",
@@ -30,7 +33,7 @@ function HomePage() {
         setCustomers(data);
         setShowCustomers(data);
       });
-  }, [field]);
+  }, [contextData]);
 
   const filterCustomerByFieldAndValue = (field, value) => {
     if (field === "") {

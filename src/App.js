@@ -10,6 +10,8 @@ import Offices from "./pages/home/Offices";
 import Payments from "./pages/home/Payments";
 import {Navbar} from "../src/components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ViewComponent from "./components/ViewComponent";
+import UpdateComponent from "./components/UpdateComponent";
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path='/Payments' element={<Payments/>} />
           <Route path='/ProductLines' element={<ProductLines/>} />
           <Route path='/Products'  element={<Products/>} />
+          <Route path='/details'  element={<ViewComponent/>} />
+          <Route path='/update'  element={<UpdateComponent/>} />
         </Routes>
     </Router>
 
